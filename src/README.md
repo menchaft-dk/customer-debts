@@ -10,7 +10,7 @@
 ### Run the test cases
 
   * Go to customer-debts/src
-  * Do `pytest -vv tests/Utils`
+  * Do `pytest -vv tests/Scripts_test.py`
 
 ### Important Notice
 
