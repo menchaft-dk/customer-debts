@@ -8,22 +8,21 @@ from service.api import Api
 from scripts import DisplayDebts, DisplayDebtswithIsPaymentPlanField, DisplayDebtsWithRemainingBalance,\
     DisplayDebtsWithNextPaymentDueDate
 import loadDataFromApis
-from Logging import getLogger
 
 
 debts = []
 debts_with_payment_plans = {}
 payments = []
-debtsJsonLfile = os.path.join(os.getcwd()+"\src", 'data\debts.jl');
-debtsJsonfile = os.path.join(os.getcwd()+"\src", 'data\debts.json');
-payment_plan_jsonfile = os.path.join(os.getcwd()+"\src", 'data\payment_plans.json');
-payments_jsonFile = os.path.join(os.getcwd()+"\src", 'data\payments.json');
+debtsJsonLfile = os.path.join(os.getcwd(), 'data\debts.jl');
+debtsJsonfile = os.path.join(os.getcwd(), 'data\debts.json');
+payment_plan_jsonfile = os.path.join(os.getcwd(), 'data\payment_plans.json');
+payments_jsonFile = os.path.join(os.getcwd(), 'data\payments.json');
 debts_and_payments = {}
 debts_with_remainingBalance = []
 
 logging.getLogger().setLevel(level=logging.INFO)
 
-log_dir_path = os.path.join(os.getcwd(), 'src')
+log_dir_path = os.getcwd()
 
 
 def main():

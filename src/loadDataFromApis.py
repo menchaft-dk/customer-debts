@@ -14,7 +14,7 @@ logger = logging.getLogger(__name__)
 logger.setLevel(level=logging.INFO)
 formatter = logging.Formatter('%(asctime)s - %(levelname)s - %(message)s')
 
-data_dir_path = os.path.join(os.getcwd()+'\\src', 'data')
+data_dir_path = os.path.join(os.getcwd(), 'data')
 debts_endpoint = DEBTS_ENDPOINT
 payment_plan_endpoint = PAYMENT_PLANS_ENDPOINT
 payments_endpoint = PAYMENT_ENDPOINT
@@ -41,7 +41,7 @@ def loadDataFromApis():
     Utils.saveJsonDataToJsonLFile(payment_plan_jl, payment_plans);
 
 def main():
-    loadDataToJsonFile()
+    loadDataFromApis()
 
 if __name__=="__main__":
     "This controller will be called in Main.py"

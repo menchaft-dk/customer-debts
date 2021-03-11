@@ -12,7 +12,7 @@ logger = logging.getLogger(__name__)
 logger.setLevel(level=logging.INFO)
 formatter = logging.Formatter('%(asctime)s - %(levelname)s - %(message)s')
 
-log_dir_path = os.path.join(os.getcwd(), 'src')
+log_dir_path = os.getcwd()
 
 
 def addFieldIsPaymentPlanToDebt(payment_plans, debts):
